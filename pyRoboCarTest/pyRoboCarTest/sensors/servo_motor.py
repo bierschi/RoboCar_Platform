@@ -47,7 +47,7 @@ class SteeringMotor(ServoMotor):
         self.min = 150
         self.max = 490
 
-        self.middle = 350
+        self.middle = 360
 
         self.range_factor_left = 200
         self.factor_left = self.range_factor_left/50
@@ -84,7 +84,7 @@ class CameraMotor(ServoMotor):
         self.min = 170
         self.max = 560
 
-        self.middle = 365
+        self.middle = 370
         self.range_factor = (self.max - self.min) / 2
         self.factor = self.range_factor/50
 
@@ -109,19 +109,19 @@ if __name__ == '__main__':
     steering = SteeringMotor(channel=15)
     camera = CameraMotor(channel=14)
 
-    for i in range(0, 101, 1):
+    for i in range(0, 105, 5):
         print(i)
         steering.move(i)
         camera.move(i)
         sleep(0.1)
 
-    for i in range(101, 0, -1):
+    for i in range(100, 0, -5):
         print(i)
         steering.move(i)
         camera.move(i)
         sleep(0.1)
 
-    for i in range(0, 50, 1):
+    for i in range(0, 55, 5):
         print(i)
         steering.move(i)
         camera.move(i)

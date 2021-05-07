@@ -64,6 +64,7 @@ class Gearmotor:
         wiringpi.digitalWrite(self.direction_pin, backward_direction)
         wiringpi.pwmWrite(self.pwm_pin, speed)
 
+
 if __name__ == '__main__':
     motor = Gearmotor()
 
@@ -73,6 +74,8 @@ if __name__ == '__main__':
     #    sleep(0.5)
 
     for i in range(100, -100, -5):
-        #print(i)
+        print(i)
         motor.set_speed2(i)
         sleep(1)
+
+    motor.set_speed2(0)
