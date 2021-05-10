@@ -68,10 +68,13 @@ class Gearmotor:
 if __name__ == '__main__':
     motor = Gearmotor()
 
-    #for i in range(0, 100, 5):
-    #    print(i)
-    #    motor.set_speed2(i)
-    #    sleep(0.5)
+    #motor.set_speed2(-30)
+    #sleep(2)
+    #motor.set_speed2(0)
+    for i in range(0, 100, 5):
+        print(i)
+        motor.set_speed2(i)
+        sleep(0.5)
 
     for i in range(100, -100, -5):
         print(i)

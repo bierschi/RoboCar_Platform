@@ -113,16 +113,16 @@ if __name__ == '__main__':
         print(i)
         steering.move(i)
         camera.move(i)
-        sleep(0.1)
+        sleep(0.5)
 
     for i in range(100, 0, -5):
         print(i)
         steering.move(i)
         camera.move(i)
-        sleep(0.1)
+        sleep(0.5)
 
     for i in range(0, 55, 5):
         print(i)
         steering.move(i)
         camera.move(i)
-        sleep(0.1)
+        sleep(0.5)

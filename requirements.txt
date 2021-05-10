@@ -2,3 +2,4 @@ adafruit-pca9685>=1.0.1
 wiringpi>=2.60.1
 RPi.GPIO>=0.7.0
 picamera>=1.13
+mpu6050-raspberrypi
