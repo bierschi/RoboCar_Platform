@@ -8,8 +8,8 @@ Here are all hardware components listed which are needed to build this RoboCar
     - 4WD RC Smart Auto Chassis: [Auto Chassis](https://de.aliexpress.com/item/4WD-RC-Smart-Auto-Chassis-F-r-Arduino-Plattform-Mit-MG996R-Metal-Gear-Servo-Lagersatz-Lenkgetriebe/32830665408.html?spm=a2g0x.search0104.3.2.106a2f5f4Hjmhg&ws_ab_test=searchweb0_0%2Csearchweb201602_4_10320_10152_10065_10151_10344_10068_10342_10547_10343_10340_10341_10548_10696_10084_10083_10618_10304_5725020_10307_10820_10821_10302_5724920_5724120_10843_5724020_10059_100031_10319_5724320_10103_10624_10623_10622_10621_10620_5724220%2Csearchweb201603_2%2CppcSwitch_5&algo_expid=0a82566b-deae-43f9-9fa3-5f2403602186-0&algo_pvid=0a82566b-deae-43f9-9fa3-5f2403602186&transAbTest=ae803_2&priceBeautifyAB=0) **35,99€**
 
 - **Motor equipment**:
-    - Servomotor MG996R (already included in the auto chassis): [Servomotor](https://www.ebay.de/itm/401607549903?hash=item5d81ace3cf:g:oSkAAOSw40pbrfqM) **5,45€**
-    - PCA9685 Servodriver: [PCA9685](https://www.ebay.de/itm/PCA9685-16-Kanal-Driver-Servomotor-Treiber-Modul-PWM-I2C-Arduino-Raspberry-Pi/253285067342?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2057872.m2749.l2649)
+    - Servomotor MG996R (already included in the auto chassis): [Servomotor](https://www.ebay.de/itm/401607549903?hash=item5d81ace3cf:g:oSkAAOSw40pbrfqM) 
+    - PCA9685 Servodriver: [PCA9685](https://www.ebay.de/itm/PCA9685-16-Kanal-Driver-Servomotor-Treiber-Modul-PWM-I2C-Arduino-Raspberry-Pi/253285067342?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2057872.m2749.l2649) **5,45€**
     - Gearmotor (already included in the auto chassis): [Gearmotor](https://www.ebay.de/itm/274487600074?hash=item3fe8bc63ca:g:D3cAAOSwhU1fV29L)
     - Motordriver Pololu DRV8838: [Motordriver](https://www.ebay.de/itm/Pololu-DRV8838-Single-Brushed-DC-Motor-Driver-Carrier-2990/272351389574?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2057872.m2749.l2649) **5,12€**
     
