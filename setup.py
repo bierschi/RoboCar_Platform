@@ -22,7 +22,6 @@ setup(
     author_email=__email__,
     url="https://github.com/bierschi/RoboCar_Platform",
     packages=find_packages(),
-    #package_data={'ComunioScore': ['config/comunioscore.ini']},
     install_requires=required,
     keywords=["Python", "RoboCar", "Tests", "Scripts"],
     python_requires=">=3",

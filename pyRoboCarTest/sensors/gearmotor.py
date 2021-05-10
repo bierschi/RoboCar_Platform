@@ -1,16 +1,16 @@
 import wiringpi
 from time import sleep
 
-MAX_SPEED = 480
-
 
 class Gearmotor:
 
-    def __init__(self, pwm_pin=12, direction_pin=5):
-        """
+    MAX_SPEED = 480
 
-        :param pwm_pin:
-        :param direction_pin:
+    def __init__(self, pwm_pin=12, direction_pin=5):
+        """ Class Gearmotor to control the direction and speed of the gearmotor
+
+        :param pwm_pin: pin for the pwm
+        :param direction_pin: pin for the direction
         """
 
         self.pwm_pin = pwm_pin
@@ -19,30 +19,17 @@ class Gearmotor:
         wiringpi.wiringPiSetupGpio()
         wiringpi.pinMode(self.pwm_pin, wiringpi.GPIO.PWM_OUTPUT)
         wiringpi.pwmSetMode(wiringpi.GPIO.PWM_MODE_MS)
-        wiringpi.pwmSetRange(MAX_SPEED)
+        wiringpi.pwmSetRange(Gearmotor.MAX_SPEED)
         wiringpi.pwmSetClock(2)
 
         wiringpi.pinMode(self.direction_pin, wiringpi.GPIO.OUTPUT)
 
-    def set_speed(self, speed):
+    def set_speed(self, value):
+        """ sets the speed for the gearmotor
+            positive value means forward direction
+            negative value means backward direction
 
-        if speed < 0:
-            speed = -speed
-            dir_value = 1
-        else:
-            dir_value = 0
-
-        if speed > MAX_SPEED:
-            speed = MAX_SPEED
-
-        wiringpi.digitalWrite(self.direction_pin, dir_value)
-        wiringpi.pwmWrite(self.pwm_pin, speed)
-
-    def set_speed2(self, value):
-        """
-
-        :param value:
-        :return:
+        :param value: value for the speed
         """
 
         if 0 <= value <= 100:
@@ -68,17 +55,14 @@ class Gearmotor:
 if __name__ == '__main__':
     motor = Gearmotor()
 
-    #motor.set_speed2(-30)
-    #sleep(2)
-    #motor.set_speed2(0)
     for i in range(0, 100, 5):
         print(i)
-        motor.set_speed2(i)
+        motor.set_speed(i)
         sleep(0.5)
 
     for i in range(100, -100, -5):
         print(i)
-        motor.set_speed2(i)
+        motor.set_speed(i)
         sleep(1)
 
-    motor.set_speed2(0)
+    motor.set_speed(0)

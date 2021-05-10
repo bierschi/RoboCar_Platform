@@ -5,7 +5,11 @@ import RPi.GPIO as GPIO
 class Ultrasonic:
 
     def __init__(self, trigger=23, echo=24):
+        """ Class Ultrasonic to measure the distance to obstacles
 
+        :param trigger: pin for the trigger
+        :param echo: pin for the echo
+        """
         self.trigger = trigger
         self.echo = echo
 
@@ -14,7 +18,8 @@ class Ultrasonic:
 
         # define board layout
         GPIO.setmode(GPIO.BCM)
-        # set trigger pin as output, echo pin as input
+
+        # set trigger pin as output and echo pin as input
         GPIO.setup(self.trigger, GPIO.OUT)
         GPIO.setup(self.echo, GPIO.IN)
 
@@ -24,7 +29,7 @@ class Ultrasonic:
         GPIO.cleanup()
 
     def measurement(self):
-        """ perform the measurement
+        """ performs the measurement
 
         :return: raw distance measurement
         """
@@ -54,7 +59,7 @@ class Ultrasonic:
         distance = pulse_duration * 17150
 
         distance = round(distance, 4)
-        print("Distance: {} cm".format(distance))
+        #print("Distance: {} cm".format(distance))
 
         return distance
 
