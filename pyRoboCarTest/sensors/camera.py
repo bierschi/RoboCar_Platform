@@ -2,6 +2,7 @@ import picamera
 import socket
 from time import sleep
 
+
 class Camera:
 
     def __init__(self):
@@ -10,6 +11,13 @@ class Camera:
         self.camera.resolution = (640, 480)
         self.camera.framerate = 24
         self.camera.rotation = 180
+
+    def start_recording(self, conn):
+        """
+
+        :return:
+        """
+        self.camera.start_recording(output=conn, format='h264')
 
     def server(self):
 
