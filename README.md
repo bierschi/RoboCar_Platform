@@ -2,7 +2,7 @@
 RoboCar is a low cost Autonomous Driving Platform
 
 - Low cost Hardware Components
-- Sensor Suit for an AD Platform (Lidar, IMU, Camera, Motors)  
+- Sensor Suit for an AD Platform (Lidar, IMU, Ultrasonic, Camera, Motors)  
 - Schematics for the RoboCar Platform
 - Provides all Settings for the Operating System
 - Control the Sensors with Test and Validation Scripts
