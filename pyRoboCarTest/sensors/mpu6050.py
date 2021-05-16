@@ -1,4 +1,4 @@
-from imu import IMU
+from sensors import IMU
 
 
 class MPU6050(IMU):

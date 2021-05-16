@@ -1,8 +1,10 @@
 import time
 import RPi.GPIO as GPIO
+from threading import Thread
+from time import sleep
 
 
-class Ultrasonic:
+class Ultrasonic(Thread):
 
     def __init__(self, trigger=23, echo=24):
         """ Class Ultrasonic to measure the distance to obstacles
@@ -10,6 +12,9 @@ class Ultrasonic:
         :param trigger: pin for the trigger
         :param echo: pin for the echo
         """
+
+        super().__init__()
+
         self.trigger = trigger
         self.echo = echo
 
@@ -23,10 +28,23 @@ class Ultrasonic:
         GPIO.setup(self.trigger, GPIO.OUT)
         GPIO.setup(self.echo, GPIO.IN)
 
+        self.running = True
+
     def __del__(self):
         """destructor"""
 
         GPIO.cleanup()
+
+    def run(self) -> None:
+        """
+
+        :return:
+        """
+
+        while self.running:
+            distance = self.get_distance()
+            print("Distance: {} cm".format(distance))
+            sleep(0.5)
 
     def measurement(self):
         """ performs the measurement
