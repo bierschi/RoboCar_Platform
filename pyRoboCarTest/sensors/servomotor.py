@@ -38,7 +38,7 @@ class SteeringMotor(ServoMotor):
     def __init__(self, channel=15, frequency=60):
         """ class SteeringMotor
 
-        :param channel: used channel
+        :param channel: used channel between 0 - 15
         :param frequency: used frequency
         """
         # init base class
@@ -69,13 +69,33 @@ class SteeringMotor(ServoMotor):
         else:
             print("Value not in range of 0 - 100!")
 
+    def test_extrema(self):
+        """ test the extrema position of the steering motor
+
+        """
+        print("Steering Position: ", end='')
+        for i in range(0, 105, 5):
+            print("{}%".format(i), end=' ')
+            self.move(i)
+            sleep(0.5)
+
+        for i in range(100, 0, -5):
+            print("{}%".format(i), end=' ')
+            self.move(i)
+            sleep(0.5)
+
+        for i in range(0, 55, 5):
+            print("{}%".format(i), end=' ')
+            self.move(i)
+            sleep(0.5)
+
 
 class CameraMotor(ServoMotor):
 
     def __init__(self, channel=14, frequency=60):
         """ class CameraMotor
 
-        :param channel: used channel
+        :param channel: used channel between 0 - 15
         :param frequency: used frequency
         """
         # init base class
@@ -103,6 +123,25 @@ class CameraMotor(ServoMotor):
         else:
             print("Value not in range of 0 - 100!")
 
+    def test_extrema(self):
+        """ test the extrema position of the camera motor
+
+        """
+        print("Camera Position: ", end='')
+        for i in range(0, 105, 5):
+            print("{}%".format(i), end=' ')
+            self.move(i)
+            sleep(0.5)
+
+        for i in range(100, 0, -5):
+            print("{}%".format(i), end=' ')
+            self.move(i)
+            sleep(0.5)
+
+        for i in range(0, 55, 5):
+            print("{}%".format(i), end=' ')
+            self.move(i)
+            sleep(0.5)
 
 if __name__ == '__main__':
 

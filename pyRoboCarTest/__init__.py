@@ -1,4 +1,4 @@
-__title__ = "pyRoboCarTest"
+__title__ = "RoboCarTest"
 __version_info__ = ('1', '0', '0')
 __version__ = ".".join(__version_info__)
 __author__ = "Christian Bierschneider"

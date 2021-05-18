@@ -51,9 +51,37 @@ class Gearmotor:
         wiringpi.digitalWrite(self.direction_pin, backward_direction)
         wiringpi.pwmWrite(self.pwm_pin, speed)
 
+    def test_extrema(self):
+        """ tests the extrema speeds of the gearmotor
+
+        """
+        print("Speed: ", end=' ')
+        for i in range(0, 100, 5):
+            print("{}%".format(i), end=' ')
+            self.set_speed(i)
+            sleep(0.5)
+
+        for i in range(100, -105, -5):
+            print("{}%".format(i), end=' ')
+            self.set_speed(i)
+            sleep(0.5)
+
+        for i in range(-100, 5, 5):
+            print("{}%".format(i), end=' ')
+            self.set_speed(i)
+            sleep(0.5)
+
 
 if __name__ == '__main__':
+    import sys
     motor = Gearmotor()
+    motor.test_extrema()
+    try:
+        while True:
+            sleep(1)
+    except KeyboardInterrupt:
+        print("do something")
+        sys.exit(0)
 
     for i in range(0, 100, 5):
         print(i)

@@ -44,7 +44,7 @@ class Ultrasonic(Thread):
         while self.running:
             distance = self.get_distance()
             print("Distance: {} cm".format(distance))
-            sleep(0.5)
+            sleep(1)
 
     def measurement(self):
         """ performs the measurement
@@ -77,7 +77,6 @@ class Ultrasonic(Thread):
         distance = pulse_duration * 17150
 
         distance = round(distance, 4)
-        #print("Distance: {} cm".format(distance))
 
         return distance
 

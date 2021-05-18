@@ -14,7 +14,7 @@ with open("CHANGELOG.rst") as f:
 setup(
     name=__title__,
     version=__version__,
-    description="Test and Validation scripts for the RoboCar Platform",
+    description="Test and Validation package for the RoboCar Platform",
     long_description=readme,
     long_description_content_type='text/markdown',
     license=__license__,
@@ -23,7 +23,7 @@ setup(
     url="https://github.com/bierschi/RoboCar_Platform",
     packages=find_packages(),
     install_requires=required,
-    keywords=["Python", "RoboCar", "Tests", "Scripts"],
+    keywords=["Python", "RoboCar", "Platform", "Tests", "Scripts"],
     python_requires=">=3",
     classifiers=[
         "Development Status :: 4 - Beta",
