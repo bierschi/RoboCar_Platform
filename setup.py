@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-from pyRoboCarTest import __version__, __author__, __email__, __license__, __title__
+from RoboCarTest import __version__, __author__, __email__, __license__, __title__
 
 with open('requirements.txt') as f:
     required = f.read().splitlines()
@@ -41,7 +41,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            'RoboCarTest = pyRoboCarTest.robocar_test_main:main'
+            'RoboCarTest = RoboCarTest.robocartest_main:main'
         ],
     },
     zip_safe=False,
