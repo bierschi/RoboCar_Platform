@@ -21,6 +21,10 @@ Here are all hardware components listed which are needed to build this RoboCar
 
 - **Sensors**:
     - MPU6050: [MPU6050](https://www.ebay.de/itm/GY-521-MPU-6050-3-Achsen-Gyroskop-Accelerometer-module-Raspberry-Pi-for-Arduino/272260489619?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2057872.m2749.l2649) **2,52€**
+    - MPU9250: [MPU9250](https://www.ebay.de/itm/272728883461) **4,99**
     - PiCamera: [PiCamera](https://www.amazon.de/Raspberry-Pi-V2-1-1080P-Kamera-Modul/dp/B01ER2SKFS/ref=sr_1_6?s=computers&ie=UTF8&qid=1539427901&sr=1-6&keywords=pi+kamera) **25,99€**
     - Laser Scanner RPLidar A2: [RPLidar A2](https://de.aliexpress.com/item/Slamtec-RPLIDAR-A2-2D-360-grad-12-meter-scannen-radius-lidar-sensor-scanner-f-r-bstacle/32893709845.html?spm=a2g0x.search0104.3.2.57c8748fEgi3nC&transAbTest=ae803_5&ws_ab_test=searchweb0_0%2Csearchweb201602_1_10320_10065_10068_318_10547_319_10548_10696_450_10084_10083_10618_452_535_534_10304_10307_533_10820_532_10821_5727311_10302_204_10843_5727211_10059_10884_10887_100031_10319_320_10103_448_449%2Csearchweb201603_2%2CppcSwitch_0&algo_pvid=98320612-5189-4bf7-9049-efd4f4fba2c8&priceBeautifyAB=0&algo_expid=98320612-5189-4bf7-9049-efd4f4fba2c8-0) **272,16€**
     - Ultrasonic ranging module HC-SR04 + SG90 Servomotor: [Ultrasonic + Servo](https://www.ebay.de/itm/SG90-Servo-HC-SR04-Ultraschall-Entfernungsmodul-KFZ-Halterung/322711484715?ssPageName=STRK%3AMEBIDX%3AIT&var=511769911508&_trksid=p2060353.m2749.l2649) **3,45€**
+  
+
+Summery of costs: **422,13€**

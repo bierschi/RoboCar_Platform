@@ -1,5 +1,6 @@
-## IMU MPU6050
+## IMU MPU6050/MPU9250
 ![](IMU_MPU6050/MPU6050_image.jpg)
+![](IMU_MPU9250/MPU9250_image.jpg)
 
 ## PiCamera
 ![](PiCamera/PiCamera_Image.jpg)
