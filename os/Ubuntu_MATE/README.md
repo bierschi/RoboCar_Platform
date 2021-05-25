@@ -5,18 +5,15 @@
 - Ubuntu MATE 18.04 LTS <-> [ROS Melodic](http://wiki.ros.org/melodic)
 - Ubuntu MATE 16.04 LTS <-> [ROS Kinetic](http://wiki.ros.org/kinetic)
 
-Checkout the Ubuntu [archive](https://releases.ubuntu-mate.org/archived/)
+For older versions 1604/1804 checkout the Ubuntu [archive](https://releases.ubuntu-mate.org/archived/)
 
 ### Ubuntu Settings
 
-Download Ubuntu MATE 20.04 LTS from
-<pre><code>
-https://ubuntu-mate.org/raspberry-pi/
-</code></pre>
+Download Ubuntu MATE 20.04 LTS from [https://ubuntu-mate.org/raspberry-pi/](https://ubuntu-mate.org/raspberry-pi/)
 
-Set hostname to
+Set hostname to `robocar`
 <pre><code>
-robocar
+sudo hostnamectl set-hostname robocar
 </code></pre>
 
 Update/Upgrade APT package manager and install packages
@@ -26,7 +23,8 @@ sudo apt upgrade
 sudo apt install net-tools ssh python3-pip cmake curl wiringpi
 </code></pre>
 
-Enable the necessary interfaces
+Enable the necessary interfaces with `raspi-config`
+
 <pre><code>
 wget https://github.com/EmilGus/install_raspi-config/blob/master/install.sh
 sudo sh install.sh
@@ -116,6 +114,11 @@ sudo dpkg -i wiringpi-latest.deb
 </code></pre>
 
 ### Troubleshooting 
+
+ROS Melodic installation
+<pre><code>
+https://varhowto.com/install-ros-melodic-ubuntu-18-04/
+</code></pre>
 
 Known errors during the installation of 16.04 or 18.04
 <pre><code>
