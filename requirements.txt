@@ -3,3 +3,4 @@ wiringpi>=2.60.1
 RPi.GPIO>=0.7.0
 picamera>=1.13
 smbus>=1.1.post2
+pynput>=1.7.3

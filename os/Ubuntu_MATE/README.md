@@ -74,6 +74,7 @@ sudo apt install ros-noetic-desktop
 Setup ROS environment
 <pre><code>
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+source /opt/ros/noetic/setup.bash
 </code></pre>
 
 Start the roscore to check wether everything works or not
@@ -111,6 +112,12 @@ Version 2.52 is needed for RPi4
 cd /tmp
 wget https://project-downloads.drogon.net/wiringpi-latest.deb
 sudo dpkg -i wiringpi-latest.deb
+</code></pre>
+
+Test the gpio`s
+<pre><code>
+gpio -v
+gpio readall
 </code></pre>
 
 ### Troubleshooting 
