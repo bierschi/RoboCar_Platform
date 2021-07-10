@@ -19,17 +19,17 @@ class RoboCar:
 
 def main():
 
-    # RoboCarTest usage
-    usage1 = "RoboCarTest gearmotor --speed 50"
-    usage2 = "RoboCarTest steeringmotor --move 25"
-    usage3 = "RoboCarTest cameramotor --move 75"
-    usage4 = "RoboCarTest ultrasonic --distance"
-    usage5 = "RoboCarTest imu --acc"
-    usage6 = "RoboCarTest camera --port 8080"
+    # RoboCar usage
+    usage1 = "RoboCar gearmotor --speed 50"
+    usage2 = "RoboCar steeringmotor --move 25"
+    usage3 = "RoboCar cameramotor --move 75"
+    usage4 = "RoboCar ultrasonic --distance"
+    usage5 = "RoboCar imu --acc"
+    usage6 = "RoboCar camera --port 8080"
 
     description = "Test and Validation Package for the RoboCar Platform\n\nUsage:\n    {}\n    {}\n    {}\n    {}\n    {}\n    {}".format(usage1, usage2, usage3, usage4, usage5, usage6)
 
-    # parse arguments for RoboCarTest
+    # parse arguments for RoboCar
     parser = argparse.ArgumentParser(description=description, formatter_class=argparse.RawDescriptionHelpFormatter)
 
     subparser = parser.add_subparsers(dest='parseoption', help='Choose between gearmotor, steeringmotor, cameramotor, ultrasonic, imu, camera')
@@ -158,6 +158,8 @@ def main():
     elif args.parseoption == 'camera':
         pass
 
+    else:
+        parser.error("No parameter provided!")
     #robocar = RoboCar()
     #robocar.test_gearmotor()
     #robocar.test_servomotors()

@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-from RoboCarTest import __version__, __author__, __email__, __license__, __title__
+from RoboCar import __version__, __author__, __email__, __license__, __title__
 
 with open('requirements.txt') as f:
     required = f.read().splitlines()
@@ -14,7 +14,7 @@ with open("CHANGELOG.rst") as f:
 setup(
     name=__title__,
     version=__version__,
-    description="Test and Validation package for the RoboCar Platform",
+    description="Control and Validation package for the RoboCar Platform",
     long_description=readme,
     long_description_content_type='text/markdown',
     license=__license__,
@@ -23,7 +23,7 @@ setup(
     url="https://github.com/bierschi/RoboCar_Platform",
     packages=find_packages(),
     install_requires=required,
-    keywords=["Python", "RoboCar", "Platform", "Tests", "Scripts"],
+    keywords=["Python", "RoboCar", "Platform", "Control", "Keyboard", "Scripts"],
     python_requires=">=3",
     classifiers=[
         "Development Status :: 4 - Beta",
@@ -41,7 +41,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            'RoboCarTest = RoboCarTest.robocartest_main:main'
+            'RoboCar = RoboCar.robocar_main:main'
         ],
     },
     zip_safe=False,

@@ -81,7 +81,7 @@ class MPU6050(IMU):
         :return returns the temperature in degrees Celcius.
         """
         raw_temp = self.read_i2c_word(self.TEMP_OUT0)
-
+        print("RAW TEMP: {}".format(raw_temp))
         # Get the actual temperature using the formula given in the
         # MPU-6050 Register Map and Descriptions revision 4.2, page 30
         actual_temp = (raw_temp / 340.0) + 36.53
@@ -132,7 +132,7 @@ class MPU6050(IMU):
         x = self.read_i2c_word(self.ACCEL_XOUT0)
         y = self.read_i2c_word(self.ACCEL_YOUT0)
         z = self.read_i2c_word(self.ACCEL_ZOUT0)
-
+        print("X: {}, Y: {}, Z: {}".format(x, y, z))
         accel_scale_modifier = None
         accel_range = self.read_accel_range(True)
 
@@ -241,6 +241,7 @@ if __name__ == "__main__":
     mpu = MPU6050()
 
     while True:
+        #print(mpu.read_accel_range(True))
         accel_data = mpu.get_accel_data(True)
         gyro_data = mpu.get_gyro_data()
         print("Temp: {}, Ax: {}, Ay: {}, Az: {}, Gx: {}, Gy: {}, Gz: {}".format(mpu.get_temp(), accel_data['x'], accel_data['y'], accel_data['z'], gyro_data['x'], gyro_data['y'], gyro_data['z']))
