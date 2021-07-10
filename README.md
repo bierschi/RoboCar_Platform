@@ -5,8 +5,8 @@ RoboCar is a low cost Autonomous Driving Platform
 - Sensor Suit for an AD Platform (Lidar, IMU, Ultrasonic, Camera, Motors)  
 - Schematics for the RoboCar Platform
 - Provides all Settings for the Ubuntu MATE Operating System
-- Control the Sensors with Test and Validation Scripts
-- [RoboCar_SDK](https://github.com/bierschi/RoboCar_SDK) coming soon
+- Control the Platform with the **RoboCar** Python Package
+- [RoboCar_SDK](https://github.com/bierschi/RoboCar_SDK) in Development
 
 ## Installation
 Install [RoboCar]() with pip
@@ -24,7 +24,7 @@ sudo python3 setup.py install
 ## Usage
 
 <pre><code>
-RoboCarTest --help
+RoboCar --help
 </code></pre>
 
 <pre><code>
