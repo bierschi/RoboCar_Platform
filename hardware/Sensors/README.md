@@ -8,5 +8,5 @@
 ## RPLidar A2
 ![](RPLidar_A2/RPLidar_A2.png)
 
-## PiCamera
+## Ultrasonic
 ![](Ultrasonic_HCSR04/HCSR04_Ultrasonic_Image.jpg)
