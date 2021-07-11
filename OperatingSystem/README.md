@@ -5,7 +5,7 @@
 - Ubuntu MATE 18.04 LTS <-> [ROS Melodic](http://wiki.ros.org/melodic)
 - Ubuntu MATE 16.04 LTS <-> [ROS Kinetic](http://wiki.ros.org/kinetic)
 
-For older versions 1604/1804 checkout the Ubuntu [archive](https://releases.ubuntu-mate.org/archived/)
+For older versions 1604/1804 checkout the Ubuntu Mate [Archive](https://releases.ubuntu-mate.org/archived/)
 
 ### Ubuntu Settings
 
