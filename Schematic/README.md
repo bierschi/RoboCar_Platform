@@ -24,6 +24,7 @@ I2C Bus address: 0x40 <br>
 Channel: 15 <br>
 I2C Bus address: 0x70 <br>
 
-
+**RPLidar A2** <br>
+Connected to USB
 
 
