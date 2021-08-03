@@ -22,9 +22,10 @@ I2C Bus address: 0x40 <br>
 
 **SteeringServoMotor** <br>
 Channel: 15 <br>
-I2C Bus address: 0x70 <br>
+I2C Bus address: 0x40 <br>
 
 **RPLidar A2** <br>
-Connected to USB
+Connected to USB `/dev/ttyUSBO` <br>
+Baurdate: 115200
 
 

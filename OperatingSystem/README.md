@@ -16,19 +16,30 @@ Set hostname to `robocar`
 sudo hostnamectl set-hostname robocar
 </code></pre>
 
-Update/Upgrade APT package manager and install packages
+Update (Upgrade) APT package manager and install packages
 <pre><code>
 sudo apt update
-sudo apt upgrade
-sudo apt install net-tools ssh python3-pip cmake curl wiringpi
+(sudo apt upgrade)
+sudo apt install net-tools ssh python3-pip curl cmake wiringpi
 </code></pre>
 
 Enable the necessary interfaces with `raspi-config`
 
 <pre><code>
+sudo raspi-config
+</code></pre>
+
+if not available, please download the following script
+<pre><code>
 wget https://github.com/EmilGus/install_raspi-config/blob/master/install.sh
 sudo sh install.sh
 sudo raspi-config
+</code></pre>
+
+Add user to group `dialout` to access the usb ports
+
+<pre><code>
+sudo usermod -a -G dialout &lt;user&gt;
 </code></pre>
 
 Make sure that the following interfaces work correctly:
@@ -38,16 +49,11 @@ Make sure that the following interfaces work correctly:
 - SSH
 - I2C
 
-Add user to group `dialout`
-
-<pre><code>
-sudo usermod -a -G dialout &lt;user&gt;
-</code></pre>
-
 ### Install [ROS Noetic](http://wiki.ros.org/noetic)
+
+Add the official ROS repo to sources.list
 <pre><code>
-https://roboticsbackend.com/install-ros-on-raspberry-pi-3/
-https://varhowto.com/install-ros-noetic-ubuntu-20-04/
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 </code></pre>
 
 Update the sources list
@@ -73,6 +79,7 @@ sudo apt update
 Install ROS Noetic
 <pre><code>
 sudo apt install ros-noetic-desktop
+(sudo apt install ros-melodic-desktop)
 </code></pre>
 
 
@@ -127,18 +134,15 @@ gpio readall
 </code></pre>
 
 ### Troubleshooting 
+Known errors during the installation of 16.04 or 18.04 <br> <br>
 
-ROS Melodic installation
+`sshd` gives the error `error: Could not load host key: /etc/ssh/ssh_host_rsa_key`. Execute this command to resolve the problem
+<pre><code>
+sudo /usr/bin/ssh-keygen -A
+</code></pre>
+
+ROS Melodic installation Tutorial
 <pre><code>
 https://varhowto.com/install-ros-melodic-ubuntu-18-04/
 </code></pre>
 
-Known errors during the installation of 16.04 or 18.04
-<pre><code>
-sudo dpkg -i --force-all /var/cache/apt/archives/linux-firmware-raspi2_1.20200601+arm64-0ubuntu2~18.04.1_armhf.deb
-sudo apt-get upgrade
-</code></pre>
-
-<pre><code>
-sudo /usr/bin/ssh-keygen -A
-</code></pre>
