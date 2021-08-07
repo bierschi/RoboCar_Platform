@@ -1,11 +1,11 @@
 # RoboCar Platform
 RoboCar is a low cost Autonomous Driving Platform
 
-- Low cost Hardware Components
+- Low cost [Hardware](https://github.com/bierschi/RoboCar_Platform/tree/main/Hardware) Components
 - Sensor Suit for an AD Platform (Lidar, IMU, Ultrasonic, Camera, Motors)  
-- Schematics for the RoboCar Platform
-- Provides all Settings for the Ubuntu MATE Operating System
-- Control the Platform with the **RoboCar** Python Package
+- [Schematic](https://github.com/bierschi/RoboCar_Platform/tree/main/Schematic) for the RoboCar Platform
+- Provides all Settings for the Ubuntu MATE [Operating System](https://github.com/bierschi/RoboCar_Platform/tree/main/OperatingSystem)
+- Control the Platform with the [RoboCar](https://github.com/bierschi/RoboCar_Platform/tree/main/RoboCar) Python Package
 - [RoboCar_SDK](https://github.com/bierschi/RoboCar_SDK) in Development
 
 ## Installation
