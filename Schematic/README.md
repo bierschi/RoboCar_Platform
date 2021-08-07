@@ -3,7 +3,7 @@
 ![](schematic_robocar_platform.png)
 
 
-## GPIO (BCM) / Bus Mapping
+## GPIO (BCM) / Bus / Sensor Mapping
 
 **Gearmotor** <br>
 GPIO 5: Direction Pin <br>
@@ -26,6 +26,7 @@ I2C Bus address: 0x40 <br>
 
 **RPLidar A2** <br>
 Connected to USB `/dev/ttyUSBO` <br>
-Baurdate: 115200
+Baudrate: 115200
 
-
+**PiCamera** <br>
+Connected to the Camera Module Port

@@ -20,7 +20,7 @@ Update (Upgrade) APT package manager and install packages
 <pre><code>
 sudo apt update
 (sudo apt upgrade)
-sudo apt install net-tools ssh python3-pip curl cmake wiringpi
+sudo apt install net-tools ssh python3-pip curl git cmake
 </code></pre>
 
 Enable the necessary interfaces with `raspi-config`
@@ -54,11 +54,6 @@ Make sure that the following interfaces work correctly:
 Add the official ROS repo to sources.list
 <pre><code>
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-</code></pre>
-
-Update the sources list
-<pre><code>
-echo "deb http://packages.ros.org/ros/ubuntu focal main" | sudo tee /etc/apt/sources.list.d/ros-focal.list
 </code></pre>
 
 Add the ROS keyserver
