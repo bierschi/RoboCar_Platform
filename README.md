@@ -6,7 +6,7 @@ RoboCar is a low cost Autonomous Driving Platform
 - [Schematic](https://github.com/bierschi/RoboCar_Platform/tree/main/Schematic) for the RoboCar Platform
 - Provides all Settings for the Ubuntu MATE [Operating System](https://github.com/bierschi/RoboCar_Platform/tree/main/OperatingSystem)
 - Control the Platform with the [RoboCar](https://github.com/bierschi/RoboCar_Platform/tree/main/RoboCar) Python Package
-- [RoboCar_SDK](https://github.com/bierschi/RoboCar_SDK) in Development
+- C++ Software Development Kit [RoboCar_SDK](https://github.com/bierschi/RoboCar_SDK) in Development
 
 ## Installation
 Install [RoboCar]() with pip
