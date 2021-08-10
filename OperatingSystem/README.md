@@ -85,7 +85,7 @@ echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 source /opt/ros/noetic/setup.bash
 </code></pre>
 
-Start the roscore to check wether everything works or not
+Start the roscore master to check whether everything works or not
 <pre><code>
 roscore
 </code></pre>
@@ -109,24 +109,11 @@ Enable this service file on boot
 sudo systemctl enable roscore.service
 </code></pre>
 
-Now the roscore master should be available on each boot. Check the status with:
+Now the roscore master should be available on each boot. Check the status with
 <pre><code>
 sudo systemctl status roscore.service
 </code></pre>
 
-### WiringPi
-Version 2.52 is needed for RPi4
-<pre><code>
-cd /tmp
-wget https://project-downloads.drogon.net/wiringpi-latest.deb
-sudo dpkg -i wiringpi-latest.deb
-</code></pre>
-
-Test the gpio`s
-<pre><code>
-gpio -v
-gpio readall
-</code></pre>
 
 ### Troubleshooting 
 Known errors during the installation of 16.04 or 18.04 <br> <br>
