@@ -1,4 +1,7 @@
 # RoboCar Platform
+
+![](Images/robocar_platform_2.png)
+
 RoboCar is a low cost Autonomous Driving Platform
 
 - Low cost [Hardware](https://github.com/bierschi/RoboCar_Platform/tree/main/Hardware) Components
@@ -8,7 +11,7 @@ RoboCar is a low cost Autonomous Driving Platform
 - Control the Platform with the [RoboCar](https://github.com/bierschi/RoboCar_Platform/tree/main/RoboCar) Python Package
 - C++ Software Development Kit [RoboCar_SDK](https://github.com/bierschi/RoboCar_SDK) in Development
 
-![](Images/robocar_platform_3.png)
+
 
 ## Installation
 Install [RoboCar]() with pip
