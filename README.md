@@ -8,6 +8,8 @@ RoboCar is a low cost Autonomous Driving Platform
 - Control the Platform with the [RoboCar](https://github.com/bierschi/RoboCar_Platform/tree/main/RoboCar) Python Package
 - C++ Software Development Kit [RoboCar_SDK](https://github.com/bierschi/RoboCar_SDK) in Development
 
+![](Images/robocar_platform.png)
+
 ## Installation
 Install [RoboCar]() with pip
 <pre><code>
