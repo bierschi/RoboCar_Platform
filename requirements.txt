@@ -4,3 +4,4 @@ RPi.GPIO>=0.7.0
 picamera>=1.13
 smbus>=1.1.post2
 pynput>=1.7.3
+pyserial>=3.5

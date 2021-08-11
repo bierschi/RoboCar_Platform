@@ -41,7 +41,8 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            'RoboCar = RoboCar.robocar_main:main'
+            'RoboCar = RoboCar.robocar_main:main',
+            'RoboCarControl = RoboCar.robocarcontrol_main:main'
         ],
     },
     zip_safe=False,
