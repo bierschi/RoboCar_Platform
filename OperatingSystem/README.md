@@ -42,6 +42,11 @@ Add user to group `dialout` to access the usb ports
 sudo usermod -a -G dialout &lt;user&gt;
 </code></pre>
 
+To enable the `/dev/video0` interface for the picamera, edit `/etc/modules` and add
+<pre><code>
+bcm2835-v4l2
+</code></pre>
+
 Make sure that the following interfaces work correctly:
 - Wifi
 - Bluetooth
