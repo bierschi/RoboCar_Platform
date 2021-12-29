@@ -32,10 +32,6 @@ sudo python3 setup.py install
 RoboCar --help
 </code></pre>
 
-<pre><code>
-RoboCarControl --help
-</code></pre>
-
 ## Changelog
 All changes and versioning information can be found in the [CHANGELOG](https://github.com/bierschi/RoboCar_Platform/blob/master/CHANGELOG.rst)
 
